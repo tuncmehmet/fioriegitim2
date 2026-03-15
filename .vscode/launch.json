@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Start fiori_egitim",
+            "name": "Start fiori_udemy_egitim",
             "type": "node",
             "request": "launch",
-            "cwd": "${workspaceFolder}/fiori_egitim",
+            "cwd": "${workspaceFolder}/fiori_udemy_egitim",
             "runtimeExecutable": "npx",
             "windows": {
                 "runtimeExecutable": "npx.cmd"
@@ -16,7 +16,7 @@
             ],
             "args": [
                 "--open",
-                "test/flpSandbox.html#fioriegitim-display"
+                "test/flpSandbox.html#fioriudemyegitim-display"
             ],
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
@@ -27,10 +27,10 @@
             }
         },
         {
-            "name": "Start fiori_egitim Local",
+            "name": "Start fiori_udemy_egitim Local",
             "type": "node",
             "request": "launch",
-            "cwd": "${workspaceFolder}/fiori_egitim",
+            "cwd": "${workspaceFolder}/fiori_udemy_egitim",
             "runtimeExecutable": "npx",
             "windows": {
                 "runtimeExecutable": "npx.cmd"
@@ -43,7 +43,7 @@
                 "--config",
                 "./ui5-local.yaml",
                 "--open",
-                "test/flpSandbox.html#fioriegitim-display"
+                "test/flpSandbox.html#fioriudemyegitim-display"
             ],
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
