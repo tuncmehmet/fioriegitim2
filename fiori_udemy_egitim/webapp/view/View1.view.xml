@@ -1,6 +1,13 @@
 <mvc:View controllerName="fioriudemyegitim.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-    </Page>
+    xmlns="sap.m"
+	xmlns:l="sap.ui.layout">
+	<l:VerticalLayout class="sapUiContentPadding">
+		<VBox wrap="Wrap">
+		<Input placeholder="Enter text here..." width="100%" description="Description"></Input>
+		<Input placeholder="Enter text here..." type="Password" showValueHelp="true" width="100%" description="Description"></Input>
+		<Input placeholder="Enter text here..." type="Email" maxLength="5" width="100%" description="Description"></Input>
+		<Input id="InputId" submit=".OnSubmit" placeholder="asdasdad" width="100%" description="Description" liveChange=".OnLiveChange"></Input>
+		</VBox>	
+	</l:VerticalLayout>
 </mvc:View>
