@@ -7,7 +7,6 @@
 |**Generation Platform**<br>Visual Studio Code|
 |**Template Used**<br>simple|
 |**Service Type**<br>SAP System (ABAP On Premise)|
-|**Service URL**<br>http://172.16.1.10:50000/sap/opu/odata/sap/ZMT_PERS_SRV|
 |**Module Name**<br>udemy_odata|
 |**Application Title**<br>App Title|
 |**Namespace**<br>|
