@@ -1,0 +1,30 @@
+{
+  "name": "udemy_odata",
+  "version": "0.0.1",
+  "description": "An SAP Fiori application.",
+  "keywords": [
+    "ui5",
+    "openui5",
+    "sapui5"
+  ],
+  "main": "webapp/index.html",
+  "devDependencies": {
+    "@sap-ux/ui5-middleware-fe-mockserver": "2",
+    "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^4.0.52"
+  },
+  "scripts": {
+    "start": "ui5 serve --config ui5.yaml --open \"test/flpSandbox.html?sap-client=100&sap-ui-xx-viewCache=false#udemyodata-display\"",
+    "start-local": "ui5 serve --config ui5-local.yaml --open \"test/flpSandbox.html?sap-client=100&sap-ui-xx-viewCache=false#udemyodata-display\"",
+    "build": "ui5 build --config ui5.yaml --clean-dest --dest dist",
+    "deploy": "ui5 build --config ui5.yaml --clean-dest --dest dist && fiori deploy --config ui5-deploy.yaml",
+    "deploy-config": "fiori add deploy-config",
+    "start-noflp": "ui5 serve --config ui5.yaml --open \"index.html?sap-client=100&sap-ui-xx-viewCache=false\"",
+    "start-mock": "ui5 serve --config ui5-mock.yaml --open \"test/flpSandbox.html?sap-client=100&sap-ui-xx-viewCache=false#udemyodata-display\"",
+    "int-test": "ui5 serve --config ui5-mock.yaml --open 'test/integration/opaTests.qunit.html'",
+    "start-variants-management": "ui5 serve --config ui5.yaml --open \"preview.html?&sap-client=100&sap-ui-xx-viewCache=false&fiori-tools-rta-mode=true&sap-ui-rta-skip-flex-validation=true#preview-app\"",
+    "unit-test": "ui5 serve --config ui5-mock.yaml --open 'test/unit/unitTests.qunit.html'"
+  },
+  "sapuxLayer": "CUSTOMER_BASE"
+
+}

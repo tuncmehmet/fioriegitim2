@@ -1,0 +1,18 @@
+specVersion: "3.1"
+metadata:
+  name: udemy_odata
+type: application
+builder:
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateVersionInfo
+      configuration:
+        target:
+          url: http://172.16.1.10:50000      # örn: http://192.168.1.100:8000
+          client: "100"
+          authenticationType: basicAuthentication
+        app:
+          name: ZUDEMY_ODATA                 # BSP uygulama adı (Z ile başlamalı)
+          description: "Udemy OData Fiori App"
+          package: $TMP                      # Geliştirme için $TMP yeterli
+          transport: ""                      # $TMP kullanıyorsan boş bırak

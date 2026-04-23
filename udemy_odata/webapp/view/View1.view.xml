@@ -1,0 +1,43 @@
+<mvc:View controllerName="udemyodata.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form">
+<Page >
+    <content>
+    <f:SimpleForm title="Personel Form" editable="true" layout="ResponsiveGridLayout">
+        <Label text="Personel Id"></Label>
+        <Input id="persId"></Input>
+        <Label text="Personel Name"></Label>
+        <Input id="persName"></Input>
+        <Label text="Personel Title"></Label>
+        <Input id="persTitle"></Input>
+        <Button press=".onPressCreate" text="Create" type="Emphasized"/>
+        <Button press=".onPressUpdate" text="Update" type="Default"/>
+        <Button press=".onPressDelete" text="Delete" type="Critical"/>
+    </f:SimpleForm>
+        <Table items="{mPers>/results}" >
+            <columns>
+                <Column><Text text="Personel Id"/></Column>
+                <Column><Text text="Personel Name"/></Column>
+                <Column><Text text="Personel Title"/></Column>
+            </columns>
+            <items>
+                <ColumnListItem >
+                    <cells>
+                        <Text text="{mPers>PersId}"/>
+                        <Text text="{mPers>PersName}"/>
+                        <Text text="{mPers>PersTitle}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </content>
+    <footer>
+        <OverflowToolbar >
+            <ToolbarSpacer />
+            <Button text="Read List" press=".onPressReadList"/>
+            <Button text="Read Single" press=".onPressReadSingle"/>
+        </OverflowToolbar>
+    </footer>
+</Page>
+</mvc:View>
